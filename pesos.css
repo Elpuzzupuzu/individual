@@ -1,0 +1,63 @@
+/* Estilos generales para el cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente del documento */
+    background-color: #f4f4f4; /* Color de fondo */
+    margin: 0; /* Sin márgenes por defecto */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo del título */
+h1 {
+    color: #333; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilo del formulario */
+form {
+    background: #fff; /* Fondo blanco para el formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: auto; /* Centrar el formulario en la página */
+}
+
+/* Estilo de las etiquetas y el campo de entrada */
+label {
+    display: block; /* Mostrar como bloque */
+    margin-bottom: 5px; /* Espaciado inferior */
+}
+
+input[type="number"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espaciado inferior */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 3px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+}
+
+/* Estilo del botón */
+button {
+    background-color: #28a745; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 3px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo del botón al pasar el mouse */
+button:hover {
+    background-color: #218838; /* Color de fondo verde más oscuro */
+}
+
+/* Estilo del resultado */
+#result {
+    margin-top: 20px; /* Espaciado superior */
+    padding: 10px; /* Espaciado interno */
+    background: #e9ecef; /* Fondo gris claro */
+    border-radius: 3px; /* Bordes redondeados */
+    color: #333; /* Color del texto */
+}

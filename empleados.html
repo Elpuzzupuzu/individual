@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Sueldos</title>
+    <link rel="stylesheet" href="empleados.css">
+</head>
+<body>
+    <h1>Registro de Sueldos de Empleados</h1>
+
+    <form id="sueldoForm">
+        <label for="nombreInput">Nombre del empleado:</label><br>
+        <input type="text" id="nombreInput" required><br>
+
+        <h3>Ingresos por quincena (dos ingresos por mes durante 5 meses):</h3>
+        <label for="sueldoInput">Sueldos (separados por comas):</label><br>
+        <input type="text" id="sueldoInput" placeholder="Ej: 1500,1600,1700,1800,1900,2000" required
+            pattern="^(\d+(\.\d+)?)(,\s*\d+(\.\d+)?)*$" 
+            title="Ingrese solo números enteros o decimales separados por comas. Ej: 1500,1600,1700,1800,1900,2000"><br>
+
+        <button type="submit">Agregar Sueldos</button>
+    </form>
+
+    <h3>Resumen:</h3>
+    <div id="resultado"></div>
+
+    <script src="empleados.js"></script>
+</body>
+</html>

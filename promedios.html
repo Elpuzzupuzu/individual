@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Notas</title>
+    <link rel="stylesheet" href="promedios.css">
+</head>
+<body>
+    <h1>Registro de Notas de Alumnos</h1>
+
+    <form id="notaForm">
+        <label for="cursoInput">Selecciona el Curso:</label>
+        <select id="cursoInput" required>
+            <option value="Estructura de datos">Estructura de datos</option>
+            <option value="Desarrollo de Aplicaciones">Desarrollo de Aplicaciones</option>
+            <option value="Ingeniería de Software">Ingeniería de Software</option>
+            <option value="Administración de Base de Datos">Administración de Base de Datos</option>
+            <option value="Inglés IV">Inglés IV</option>
+        </select>
+
+        <label for="notaInput">Ingresa la Nota (0-100):</label>
+        <input type="number" id="notaInput" placeholder="Ej: 85" min="0" max="100" step="any" required>
+        
+        <button type="submit">Agregar Nota</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <div id="result"></div>
+    
+    <button id="promedioButton">Obtener Curso con Mayor Promedio</button>
+    <div id="promedioResult"></div>
+
+    <script src="promedios.js"></script>
+</body>
+</html>
